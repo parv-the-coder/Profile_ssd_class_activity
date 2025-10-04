@@ -1,67 +1,156 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Parv Shah — Profile</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f6f8fa;
+      margin: 0;
+      color: #222;
+    }
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+      padding: 32px 24px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 24px;
+      margin-bottom: 24px;
+    }
+    header img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #0077b6;
+      background: #e9ecef;
+    }
+    header h1 {
+      margin: 0 0 8px 0;
+      font-size: 2.2em;
+      color: #0077b6;
+    }
+    .subtitle {
+      font-size: 1.1em;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    .contact {
+      font-size: 1em;
+      color: #333;
+      margin-top: 8px;
+    }
+    .contact a {
+      color: #0077b6;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+    section {
+      margin-bottom: 32px;
+    }
+    section h2 {
+      color: #0077b6;
+      margin-bottom: 12px;
+      font-size: 1.3em;
+      border-left: 4px solid #0077b6;
+      padding-left: 8px;
+    }
+    .education-item {
+      margin-bottom: 10px;
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .skill {
+      background: #e0f2fe;
+      color: #0077b6;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 1em;
+      margin-bottom: 6px;
+      box-shadow: 0 1px 4px rgba(0,119,182,0.07);
+    }
+    @media (max-width: 600px) {
+      .container { padding: 12px 4px; }
+      header { flex-direction: column; align-items: flex-start; gap: 12px; }
+      header img { width: 90px; height: 90px; }
+    }
+  </style>
 </head>
 <body>
-  <div >
+  <div class="container">
     <header>
-      <img src="WhatsApp Image 2025-08-26 at 9.42.54 AM.jpeg" alt="Profile photo">
+      <img src="1.jpg" alt="Profile photo">
       <div>
         <h1>Parv Shah</h1>
         <p class="subtitle">B.E. in Computer Science • LJ University</p>
         <div class="contact">
-          📧 <a href="mailto:parvshah1712@gmail.com">parvshah1712@gmail.com</a> • 📱 +91 88662 77037<br>
-          🔗 <a href="https://www.linkedin.com/in/theparvshah" target="_blank">LinkedIn</a> • <a href="https://github.com/parv-the-coder" target="_blank">GitHub</a>
+          📧 <a href="mailto:parvshah1712@gmail.com">parvshah1712@gmail.com</a> &nbsp;|&nbsp; 📱 +91 88662 77037<br>
+          🔗 <a href="https://www.linkedin.com/in/theparvshah" target="_blank">LinkedIn</a> &nbsp;|&nbsp; <a href="https://github.com/parv-the-coder" target="_blank">GitHub</a>
         </div>
       </div>
     </header>
 
     <section>
       <h2>About Me</h2>
-      <div>
-        <p>I am a Computer Science undergraduate passionate about problem-solving and software development. With hands-on experience in building projects using Python, Django, and JavaScript, I enjoy developing impactful solutions. I am also an active competitive programmer with 100+ problems solved on LeetCode and CodeChef. Always eager to learn, I continuously enhance my skills through projects, coding challenges, and online certifications.</p>
-      </div>
+      <p>I am a Computer Science undergraduate passionate about problem-solving and software development. With hands-on experience in building projects using Python, Django, and JavaScript, I enjoy developing impactful solutions. I am also an active competitive programmer with 100+ problems solved on LeetCode and CodeChef. Always eager to learn, I continuously enhance my skills through projects, coding challenges, and online certifications.</p>
     </section>
 
     <section>
       <h2>Education</h2>
-      <div>
-        <div >
-          <strong>B.E in Computer Science</strong>
-          <div>LJ University • 2021–2025 • Current SPI: 9.0/10 (Sem V)</div>
-        </div>
-        <div>
-          <strong>Higher Secondary (XII)</strong>
-          <div>AG High School • 2021 • 81.84%</div>
-        </div>
-        <div>
-            <strong>10th (X)</strong>
-            <div>AG High School • 2019 • 81.66%</div>
-          </div>
+      <div class="education-item">
+        <strong>B.E in Computer Science</strong><br>
+        LJ University • 2021–2025 • Current SPI: 9.0/10 (Sem V)
+      </div>
+      <div class="education-item">
+        <strong>Higher Secondary (XII)</strong><br>
+        AG High School • 2021 • 81.84%
+      </div>
+      <div class="education-item">
+        <strong>10th (X)</strong><br>
+        AG High School • 2019 • 81.66%
       </div>
     </section>
 
     <section>
       <h2>Skills</h2>
-      <div>
-        <div >
-          <div >Java</div>
-          <div >Python</div>
-          <div >C</div>
-          <div >SQL</div>
-          <div >HTML5</div>
-          <div >CSS3</div>
-          <div >JavaScript</div>
-          <div >Django</div>
-          <div >React.js</div>
-          <div >Node.js</div>
-          <div >Express.js</div>
-          <div >MongoDB</div>
-          <div >Bootstrap</div>
-          <div >Git & GitHub</div>
-        </div>
+      <div class="skills-list">
+        <span class="skill">Java</span>
+        <span class="skill">Python</span>
+        <span class="skill">C</span>
+        <span class="skill">SQL</span>
+        <span class="skill">HTML5</span>
+        <span class="skill">CSS3</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">Django</span>
+        <span class="skill">React.js</span>
+        <span class="skill">Node.js</span>
+        <span class="skill">Express.js</span>
+        <span class="skill">MongoDB</span>
+        <span class="skill">Bootstrap</span>
+        <span class="skill">Git & GitHub</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <div class="contact">
+        📧 <a href="mailto:parvshah1712@gmail.com">parvshah1712@gmail.com</a><br>
+        📱 +91 88662 77037<br>
+        🔗 <a href="https://www.linkedin.com/in/theparvshah" target="_blank">LinkedIn</a> &nbsp;|&nbsp; <a href="https://github.com/parv-the-coder" target="_blank">GitHub</a>
       </div>
     </section>
   </div>
